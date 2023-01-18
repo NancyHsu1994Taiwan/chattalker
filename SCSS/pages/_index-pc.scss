@@ -1,0 +1,224 @@
+// body{
+//     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+//     background-repeat: no-repeat;
+//     background-position: right top;
+//     background-size: contain;
+// }
+
+@import "all";
+@import "index-mobile";
+.main{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+    .bg-circle{
+        position: absolute;
+        z-index: -100;
+        left: -139px;
+        bottom: -139px;
+    }
+    .top{
+        background-color: $primary-green;
+        width: 71px;
+        height: 71px;
+        color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        right: 48px;
+        bottom: 23px;
+    }
+}
+nav{
+    padding: 24px 0;
+    .logo{
+        max-height: 40px;
+    }
+    .fee{
+        font: normal normal normal 16px/24px Noto Sans TC;
+        padding: 8px 32px;
+        background-color: $fee-btn-color;
+        border-radius: 22px;
+        color: #fff;
+    }
+}
+
+.banner{
+    height: 100%;
+    .main-content{
+        padding-top: 188px;
+    }
+    span{
+        font: normal normal bold 18px/26px Noto Sans TC;
+        color: $primary-green;
+    }
+    h1{
+        font: normal normal bold 48px/70px Noto Sans TC;
+    }
+    p{
+        font: normal normal normal 20px/29px Noto Sans TC;
+    }
+    .home{
+        max-width: 86%;
+    }
+}
+
+.social-media{
+    h2{
+
+        margin-bottom: 48px;
+    }
+    img{
+        max-width: 21%;
+    }
+    span{
+        font: normal normal bold 24px/35px Noto Sans TC;
+        text-align: center;
+    }
+    p{
+        font: normal normal normal 16px/24px Noto Sans TC;
+        color: $social-media-intro;
+        text-align: center;
+    }
+}
+
+.row-playing{
+    position: relative;
+    span{
+        font: normal normal normal 20px/29px Noto Sans TC;
+    }
+    .card{
+        height: 100%;
+        box-shadow: 0px 2px 10px #00000014;
+        border: none;
+    }
+    .card-title{
+        font: normal normal bold 16px/24px Noto Sans TC;
+        text-align: center;
+        color: $primary-green;
+    }
+    .card-text{
+        font: normal normal normal 16px/24px Noto Sans TC;
+        text-align: center;
+    }
+    .bg-circle-light{
+        z-index: -100;
+        position: absolute;
+        right: -138px;
+        bottom: -138px;
+    }
+}
+
+.service{
+    padding-top: 100px;
+    .box{
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        padding: 48px 32px;
+        margin-bottom: 28px;
+        margin-right: 47px;
+        img{
+            margin-bottom: 41px;
+        }
+        span{
+            font: normal normal bold 18px/26px Noto Sans TC;
+        }
+        p{
+            font: normal normal normal 16px/24px Noto Sans TC;
+        }
+    }
+    .service-intro{
+        // margin-left: 140px;
+        h2{
+            text-align: left;
+        }
+        span{
+            font: normal normal normal 18px/26px Noto Sans TC;
+            display: block;
+        }
+        a{
+            background-color: $primary-green;
+            padding: 12px 32px;
+            border-radius: 27px;
+            color: #fff;
+        }
+    }
+
+}
+
+.comment{
+    h2{
+        margin-bottom: 48px;
+    }
+    .box{
+        padding: 48px 32px 24px 32px;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 12px;
+        // position: absolute;
+        .customer-img{
+            width: 26%;
+            border-radius: 50px;
+            position: relative;
+            top: 50px;
+        }
+        .comment-txt{
+            font: normal normal normal 16px/24px Noto Sans TC;
+            border-bottom: 1px solid #DDDDDD;
+        }
+        .customer{
+            p{
+                font: normal normal bold 16px/24px Noto Sans TC;
+            }
+            .content{
+                span{
+                    font: normal normal normal 16px/24px Noto Sans TC;
+                }
+                img{
+                    margin-right: 8px;
+                }
+
+            }
+        }
+    }
+    .page-turn {
+        margin-bottom: 100px;
+        a{
+            width: 10px;
+            height: 10px;
+            // padding: 10px;
+            border-radius: 50px;
+            background-color: $color-grey;
+        }
+    }
+
+}
+
+.bottom{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    // height: 65vh;
+    padding-bottom: 100px;
+    span{
+        font: normal normal bold 32px/46px Noto Sans TC;
+        display: block;
+        margin-top: 260px;
+    }
+    a{
+        background-color: $primary-green;
+        color: #fff;
+        font: normal normal normal 18px/26px Comfortaa;
+        padding: 12px 32px;
+        margin-top: 48px;
+        border-radius: 27px;
+    }
+}
+
+.footer{
+    background-color: $color-grey-2;
+    p{
+        font: normal normal normal 16px/24px Noto Sans TC;
+    }
+}

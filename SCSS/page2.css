@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+}
+.main .bg-circle {
+  position: absolute;
+  z-index: -100;
+  left: -139px;
+  bottom: -139px;
+}
+.main .top {
+  background-color: #56C4C5;
+  width: 71px;
+  height: 71px;
+  color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  right: 48px;
+  bottom: 23px;
+}
+.main nav {
+  padding: 24px 0;
+}
+.main nav .logo {
+  height: 40px;
+}
+.main nav .fee {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  padding: 8px 32px;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  color: #fff;
+}
+.main .banner h1 {
+  font: normal normal bold 48px/70px Noto Sans TC;
+  margin-top: 92px;
+}
+.main .banner span {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}
+
+.program {
+  padding-top: 100px;
+}
+.program h2 {
+  margin-bottom: 48px;
+}
+.program .price {
+  margin-bottom: 64px;
+}
+.program .price a {
+  padding: 12px 32px;
+  color: #56C4C5;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+}
+.program .price a:hover {
+  background-color: #56C4C5;
+  color: #fff;
+}
+.program .box {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  padding-bottom: 32px;
+}
+.program .box .title {
+  width: 100%;
+  padding-top: 10px;
+  display: block;
+  font: normal normal bold 24px/35px Noto Sans TC;
+  border-bottom: 1px solid #DDDDDD;
+}
+.program .box .intro {
+  display: block;
+  font: normal normal normal 16px/24px Noto Sans TC;
+  margin: 32px 0;
+}
+.program .box .num {
+  padding: 0 24px;
+  margin-bottom: 32px;
+}
+.program .box .num .box-grey {
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 24px 32px;
+}
+.program .box .num .box-grey span {
+  font: normal normal normal 12px/17px Noto Sans TC;
+}
+.program .box .num .box-grey .box-sm .user-num {
+  font: normal normal normal 32px/35px Comfortaa;
+  color: #56C4C5;
+}
+.program .box .num .box-grey .box-sm .monthly-fee {
+  font: normal normal normal 32px/35px Comfortaa;
+}
+.program .box .advantage {
+  padding: 0 29px;
+  margin-bottom: 32px;
+}
+.program .box .advantage .icon {
+  margin-right: 12px;
+}
+.program .box .advantage p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}
+.program .box .exp {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.question {
+  padding: 100px 0;
+}
+.question h1 {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  margin-bottom: 40px;
+}
+.question .QandA {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+}
+.question .QandA .question-title {
+  display: block;
+  padding: 16px 32px;
+  font: normal normal normal 18px/28px Noto Sans TC;
+  color: #000;
+}
+.question .QandA .card-body {
+  font: normal normal normal 16px/32px Noto Sans TC;
+  color: #747474;
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+.footer p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}/*# sourceMappingURL=page2.css.map */

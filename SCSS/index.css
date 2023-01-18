@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+  .main {
+    background-image: none !important;
+  }
+  .main nav {
+    border-bottom: 2px solid #FFD153;
+  }
+  .main nav .logo {
+    max-height: 24px;
+  }
+  .banner .main-content {
+    margin-top: 32px;
+  }
+  .banner span {
+    font: normal normal bold 16px/24px Noto Sans TC;
+  }
+  .banner h1 {
+    font: normal normal bold 32px/46px Noto Sans TC;
+  }
+  .banner p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+.main {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+}
+.main .bg-circle {
+  position: absolute;
+  z-index: -100;
+  left: -139px;
+  bottom: -139px;
+}
+.main .top {
+  background-color: #56C4C5;
+  width: 71px;
+  height: 71px;
+  color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  right: 48px;
+  bottom: 23px;
+}
+
+nav {
+  padding: 24px 0;
+}
+nav .logo {
+  max-height: 40px;
+}
+nav .fee {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  padding: 8px 32px;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  color: #fff;
+}
+
+.banner {
+  height: 100%;
+}
+.banner .main-content {
+  padding-top: 188px;
+}
+.banner span {
+  font: normal normal bold 18px/26px Noto Sans TC;
+  color: #56C4C5;
+}
+.banner h1 {
+  font: normal normal bold 48px/70px Noto Sans TC;
+}
+.banner p {
+  font: normal normal normal 20px/29px Noto Sans TC;
+}
+.banner .home {
+  max-width: 86%;
+}
+
+.social-media h2 {
+  margin-bottom: 48px;
+}
+.social-media img {
+  max-width: 21%;
+}
+.social-media span {
+  font: normal normal bold 24px/35px Noto Sans TC;
+  text-align: center;
+}
+.social-media p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  color: #747474;
+  text-align: center;
+}
+
+.row-playing {
+  position: relative;
+}
+.row-playing span {
+  font: normal normal normal 20px/29px Noto Sans TC;
+}
+.row-playing .card {
+  height: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border: none;
+}
+.row-playing .card-title {
+  font: normal normal bold 16px/24px Noto Sans TC;
+  text-align: center;
+  color: #56C4C5;
+}
+.row-playing .card-text {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  text-align: center;
+}
+.row-playing .bg-circle-light {
+  z-index: -100;
+  position: absolute;
+  right: -138px;
+  bottom: -138px;
+}
+
+.service {
+  padding-top: 100px;
+}
+.service .box {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+  padding: 48px 32px;
+  margin-bottom: 28px;
+  margin-right: 47px;
+}
+.service .box img {
+  margin-bottom: 41px;
+}
+.service .box span {
+  font: normal normal bold 18px/26px Noto Sans TC;
+}
+.service .box p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}
+.service .service-intro h2 {
+  text-align: left;
+}
+.service .service-intro span {
+  font: normal normal normal 18px/26px Noto Sans TC;
+  display: block;
+}
+.service .service-intro a {
+  background-color: #56C4C5;
+  padding: 12px 32px;
+  border-radius: 27px;
+  color: #fff;
+}
+
+.comment h2 {
+  margin-bottom: 48px;
+}
+.comment .box {
+  padding: 48px 32px 24px 32px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
+  border-radius: 12px;
+}
+.comment .box .customer-img {
+  width: 26%;
+  border-radius: 50px;
+  position: relative;
+  top: 50px;
+}
+.comment .box .comment-txt {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  border-bottom: 1px solid #DDDDDD;
+}
+.comment .box .customer p {
+  font: normal normal bold 16px/24px Noto Sans TC;
+}
+.comment .box .customer .content span {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}
+.comment .box .customer .content img {
+  margin-right: 8px;
+}
+.comment .page-turn {
+  margin-bottom: 100px;
+}
+.comment .page-turn a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #DDDDDD;
+}
+
+.bottom {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+.bottom span {
+  font: normal normal bold 32px/46px Noto Sans TC;
+  display: block;
+  margin-top: 260px;
+}
+.bottom a {
+  background-color: #56C4C5;
+  color: #fff;
+  font: normal normal normal 18px/26px Comfortaa;
+  padding: 12px 32px;
+  margin-top: 48px;
+  border-radius: 27px;
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+.footer p {
+  font: normal normal normal 16px/24px Noto Sans TC;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+  .main {
+    background-image: none !important;
+  }
+  .main nav {
+    border-bottom: 2px solid #FFD153;
+  }
+  .main nav .logo {
+    max-height: 24px;
+  }
+  .banner .main-content {
+    margin-top: 32px;
+  }
+  .banner span {
+    font: normal normal bold 16px/24px Noto Sans TC;
+  }
+  .banner h1 {
+    font: normal normal bold 32px/46px Noto Sans TC;
+  }
+  .banner p {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}/*# sourceMappingURL=index.css.map */

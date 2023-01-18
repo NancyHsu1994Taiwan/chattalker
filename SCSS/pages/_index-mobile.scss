@@ -1,0 +1,29 @@
+@media(max-width: 375px){
+    .container{
+        max-width: 335px;
+    }
+    .main{
+        background-image: none !important;
+        nav{
+            border-bottom: 2px solid $primary-yellow;
+            .logo{
+                max-height: 24px;
+            }
+        }
+    }
+    .banner{
+        .main-content{
+            margin-top: 32px;
+        }
+        span{
+            font: normal normal bold 16px/24px Noto Sans TC;
+        }
+        h1{
+            font: normal normal bold 32px/46px Noto Sans TC;
+        }
+        p{
+            font: normal normal normal 16px/24px Noto Sans TC;
+        }
+    }
+    
+}
