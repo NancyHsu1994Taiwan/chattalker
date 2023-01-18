@@ -69,6 +69,16 @@ h2 {
   margin-top: 100px;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+  h2 {
+    margin-top: 60px;
+    font: normal normal bold 28px/40px Noto Sans TC;
+  }
+}
 .main {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
@@ -128,6 +138,9 @@ nav .fee {
   max-width: 86%;
 }
 
+.social-media {
+  padding-top: 100px;
+}
 .social-media h2 {
   margin-bottom: 48px;
 }
@@ -137,6 +150,7 @@ nav .fee {
 .social-media span {
   font: normal normal bold 24px/35px Noto Sans TC;
   text-align: center;
+  margin: 24px 0;
 }
 .social-media p {
   font: normal normal normal 16px/24px Noto Sans TC;
@@ -145,10 +159,12 @@ nav .fee {
 }
 
 .row-playing {
+  margin-top: 100px;
   position: relative;
 }
 .row-playing span {
   font: normal normal normal 20px/29px Noto Sans TC;
+  margin-bottom: 48px;
 }
 .row-playing .card {
   height: 100%;
@@ -204,10 +220,14 @@ nav .fee {
   color: #fff;
 }
 
+.comment {
+  position: relative;
+}
 .comment h2 {
   margin-bottom: 48px;
 }
 .comment .box {
+  background-color: #fff;
   padding: 48px 32px 24px 32px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 12px;
@@ -216,7 +236,7 @@ nav .fee {
   width: 26%;
   border-radius: 50px;
   position: relative;
-  top: 50px;
+  top: -100px;
 }
 .comment .box .comment-txt {
   font: normal normal normal 16px/24px Noto Sans TC;
@@ -239,6 +259,12 @@ nav .fee {
   height: 10px;
   border-radius: 50px;
   background-color: #DDDDDD;
+}
+.comment .bg-circle-light {
+  z-index: -100;
+  position: absolute;
+  left: -20px;
+  top: -20px;
 }
 
 .bottom {
@@ -281,16 +307,79 @@ nav .fee {
   .main nav .logo {
     max-height: 24px;
   }
-  .banner .main-content {
+  .main .banner .main-content {
     margin-top: 32px !important;
   }
-  .banner span {
+  .main .banner span {
     font: normal normal bold 16px/24px Noto Sans TC;
   }
-  .banner h1 {
+  .main .banner h1 {
     font: normal normal bold 32px/46px Noto Sans TC;
   }
-  .banner p {
+  .main .banner p {
     font: normal normal normal 16px/24px Noto Sans TC;
+  }
+  .main .bg-circle {
+    max-width: 40%;
+    left: -100px;
+    bottom: -300px;
+  }
+  .main .top {
+    display: none;
+  }
+  .social-media {
+    margin-top: 60px;
+  }
+  .social-media h2 {
+    margin-bottom: 32px;
+  }
+  .social-media img {
+    max-width: 14%;
+    margin-top: 24px;
+  }
+  .social-media span {
+    font: normal normal bold 18px/26px Noto Sans TC;
+    margin: 16px 0;
+  }
+  .row-playing {
+    overflow: hidden;
+    margin-top: 60px;
+  }
+  .row-playing span {
+    margin-bottom: 32px;
+  }
+  .row-playing .card-container {
+    margin-bottom: 24px;
+  }
+  .row-playing .bg-circle-light {
+    flex-wrap: wrap;
+    max-width: 50%;
+    right: -138px;
+    bottom: -50px;
+  }
+  .service .row {
+    flex-direction: row-reverse !important;
+  }
+  .service .box {
+    margin: 24px 50px;
+    padding: 48px 24px;
+  }
+  .service .service-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service .service-intro h2 {
+    text-align: center !important;
+  }
+  .service .service-intro span {
+    text-align: center !important;
+  }
+  .comment .box .customer-img {
+    top: -50px;
+  }
+  .bottom {
+    font: normal normal bold 24px/35px Noto Sans TC;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
   }
 }/*# sourceMappingURL=index.css.map */

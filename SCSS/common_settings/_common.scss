@@ -12,3 +12,13 @@ h2{
     text-align: center;
     margin-top: 100px;
 }
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+@media(max-width: 375px){
+    h2{
+       margin-top: 60px;
+       font: normal normal bold 28px/40px Noto Sans TC; 
+    }
+}

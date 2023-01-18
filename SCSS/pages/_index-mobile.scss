@@ -10,20 +10,92 @@
                 max-height: 24px;
             }
         }
+        .banner{
+            .main-content{
+                margin-top: 32px !important;
+            }
+            span{
+                font: normal normal bold 16px/24px Noto Sans TC;
+            }
+            h1{
+                font: normal normal bold 32px/46px Noto Sans TC;
+            }
+            p{
+                font: normal normal normal 16px/24px Noto Sans TC;
+            }
+        }
+        .bg-circle{
+            max-width: 40%;
+            left: -100px;
+            bottom: -300px;
+        }
+        .top{
+            display: none;
+            // right: 16px;
+            // bottom: 16px;
+        }
     }
-    .banner{
-        .main-content{
-            margin-top: 32px !important;
+    .social-media{
+        margin-top: 60px;
+        h2{
+            margin-bottom: 32px;
+        }
+        img{
+            max-width: 14%;
+            margin-top: 24px;
         }
         span{
-            font: normal normal bold 16px/24px Noto Sans TC;
-        }
-        h1{
-            font: normal normal bold 32px/46px Noto Sans TC;
-        }
-        p{
-            font: normal normal normal 16px/24px Noto Sans TC;
+            font: normal normal bold 18px/26px Noto Sans TC;
+            margin: 16px 0;
         }
     }
-    
+    .row-playing{
+        overflow: hidden;
+        margin-top: 60px;
+        span{
+            margin-bottom: 32px;
+        }
+        .card-container{
+            margin-bottom: 24px;
+        }
+        .bg-circle-light{
+            flex-wrap: wrap;
+            max-width: 50%;
+            right: -138px;
+            bottom: -50px;
+        }
+    }
+    .service{
+        
+        .row{
+            flex-direction: row-reverse !important;
+        }
+        .box{
+            margin: 24px 50px;
+            padding: 48px 24px;
+        }
+        .service-intro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                text-align: center !important;
+            }
+            span{
+                text-align: center !important;
+            }
+        }
+        
+    }
+    .comment{
+        .box{
+            .customer-img{
+                top: -50px;
+            }
+        }
+    }
+    .bottom{
+        font: normal normal bold 24px/35px Noto Sans TC;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+    }
 }
