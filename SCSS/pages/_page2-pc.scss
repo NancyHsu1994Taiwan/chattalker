@@ -25,7 +25,7 @@
     nav{
         padding: 24px 0;
         .logo{
-            height: 40px;
+            max-height: 40px;
         }
         .fee{
             font: normal normal normal 16px/24px Noto Sans TC;
@@ -56,6 +56,7 @@
     }
     .price a{
         padding: 12px 32px;
+        margin-right: 16px;
         color: $primary-green;
         border: 1px solid $primary-green;
         border-radius: 27px;
@@ -82,9 +83,10 @@
             margin: 32px 0;
         }
         .num{
-            padding: 0 24px;
+            // padding: 0 24px;
             margin-bottom: 32px;
             .box-grey{
+                max-width: 169px;
                 background-color: $color-grey-2;
                 border-radius: 12px;
                 padding: 24px 32px;
@@ -101,6 +103,9 @@
                     }
                 }
                 
+            }
+            .equal{
+                margin: 0 16px;
             }
     
         }

@@ -1,0 +1,48 @@
+@media(max-width: 375px){
+    .main{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+        background-position: bottom;
+        // background-size: contain;
+        nav{
+            background-color: #fff;
+            border-bottom: 2px solid $primary-yellow;
+            .logo{
+                max-height: 24px;
+            }
+        }
+        .top{
+            width: 40px;
+            height: 40px;
+            right: 16px;
+            bottom: -10px;
+        }
+    }
+    .program{
+        padding-top: 60px;
+        .price{
+            width: 100%;
+            overflow-y: scroll;
+            a{
+                margin-right: 6px;
+                padding: 8px 16px !important;
+                font: normal normal normal 16px/24px Comfortaa;
+            }
+        }
+        .program-content{
+            .box{
+                margin-top: 24px;
+                .box-grey{
+                    max-width: 139px;
+                }
+            }
+            .advantage{
+                p{
+                    font: normal normal normal 14px/20px Noto Sans TC;
+                }
+            }
+        }
+        
+        
+        
+    }
+}

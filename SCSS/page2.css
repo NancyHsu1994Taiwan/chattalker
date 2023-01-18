@@ -107,7 +107,7 @@ h2 {
   padding: 24px 0;
 }
 .main nav .logo {
-  height: 40px;
+  max-height: 40px;
 }
 .main nav .fee {
   font: normal normal normal 16px/24px Noto Sans TC;
@@ -135,6 +135,7 @@ h2 {
 }
 .program .price a {
   padding: 12px 32px;
+  margin-right: 16px;
   color: #56C4C5;
   border: 1px solid #56C4C5;
   border-radius: 27px;
@@ -161,10 +162,10 @@ h2 {
   margin: 32px 0;
 }
 .program .box .num {
-  padding: 0 24px;
   margin-bottom: 32px;
 }
 .program .box .num .box-grey {
+  max-width: 169px;
   background-color: #F5F5F5;
   border-radius: 12px;
   padding: 24px 32px;
@@ -178,6 +179,9 @@ h2 {
 }
 .program .box .num .box-grey .box-sm .monthly-fee {
   font: normal normal normal 32px/35px Comfortaa;
+}
+.program .box .num .equal {
+  margin: 0 16px;
 }
 .program .box .advantage {
   padding: 0 29px;
@@ -225,4 +229,45 @@ h2 {
 }
 .footer p {
   font: normal normal normal 16px/24px Noto Sans TC;
+}
+
+@media (max-width: 375px) {
+  .main {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    background-position: bottom;
+  }
+  .main nav {
+    background-color: #fff;
+    border-bottom: 2px solid #FFD153;
+  }
+  .main nav .logo {
+    max-height: 24px;
+  }
+  .main .top {
+    width: 40px;
+    height: 40px;
+    right: 16px;
+    bottom: -10px;
+  }
+  .program {
+    padding-top: 60px;
+  }
+  .program .price {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .program .price a {
+    margin-right: 6px;
+    padding: 8px 16px !important;
+    font: normal normal normal 16px/24px Comfortaa;
+  }
+  .program .program-content .box {
+    margin-top: 24px;
+  }
+  .program .program-content .box .box-grey {
+    max-width: 139px;
+  }
+  .program .program-content .advantage p {
+    font: normal normal normal 14px/20px Noto Sans TC;
+  }
 }/*# sourceMappingURL=page2.css.map */
