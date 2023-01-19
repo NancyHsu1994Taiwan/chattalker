@@ -1,8 +1,16 @@
 @media(max-width: 375px){
+    // .container{
+
+    // }
+    body{
+        max-width: 375px !important;
+        overflow-x: hidden !important;
+    }
     .main{
         background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
-        background-position: bottom;
-        // background-size: contain;
+        background-position: bottom !important;
+        background-size: cover;
+        
         nav{
             background-color: #fff;
             border-bottom: 2px solid $primary-yellow;
@@ -18,10 +26,11 @@
         }
     }
     .program{
+        
         padding-top: 60px;
         .price{
             width: 100%;
-            overflow-y: scroll;
+            overflow-x: scroll;
             a{
                 margin-right: 6px;
                 padding: 8px 16px !important;
@@ -29,12 +38,31 @@
             }
         }
         .program-content{
+            // .row{
+            //     max-width: 375px !important;
+            //     }
             .box{
+                
                 margin-top: 24px;
-                .box-grey{
-                    max-width: 139px;
+                .num{
+                    padding: 0 16px;
+                    span{
+                        font: normal normal normal 12px/17px Noto Sans TC;
+                    }
+                    .user-num,.monthly-fee{
+                        font: normal normal normal 28px/32px Comfortaa;
+                    }
+                    .box-grey{
+                        max-width: 139px;
+                        padding: 16px 24px;
+                    }
                 }
+                .equal{
+                    margin: 0 6px;
+                }
+                
             }
+            
             .advantage{
                 p{
                     font: normal normal normal 14px/20px Noto Sans TC;

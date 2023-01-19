@@ -232,9 +232,14 @@ h2 {
 }
 
 @media (max-width: 375px) {
+  body {
+    max-width: 375px !important;
+    overflow-x: hidden !important;
+  }
   .main {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
-    background-position: bottom;
+    background-position: bottom !important;
+    background-size: cover;
   }
   .main nav {
     background-color: #fff;
@@ -254,7 +259,7 @@ h2 {
   }
   .program .price {
     width: 100%;
-    overflow-y: scroll;
+    overflow-x: scroll;
   }
   .program .price a {
     margin-right: 6px;
@@ -264,8 +269,21 @@ h2 {
   .program .program-content .box {
     margin-top: 24px;
   }
-  .program .program-content .box .box-grey {
+  .program .program-content .box .num {
+    padding: 0 16px;
+  }
+  .program .program-content .box .num span {
+    font: normal normal normal 12px/17px Noto Sans TC;
+  }
+  .program .program-content .box .num .user-num, .program .program-content .box .num .monthly-fee {
+    font: normal normal normal 28px/32px Comfortaa;
+  }
+  .program .program-content .box .num .box-grey {
     max-width: 139px;
+    padding: 16px 24px;
+  }
+  .program .program-content .box .equal {
+    margin: 0 6px;
   }
   .program .program-content .advantage p {
     font: normal normal normal 14px/20px Noto Sans TC;
