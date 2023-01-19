@@ -1,4 +1,15 @@
 
+.top{
+    z-index: 10;
+    background-color: $primary-green;
+    width: 71px;
+    height: 71px;
+    color: #fff;
+    border-radius: 50px;
+    position: fixed;
+    right: 48px;
+    bottom: 47px;
+}
 .main{
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg");
     background-repeat: no-repeat;

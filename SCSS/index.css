@@ -79,6 +79,18 @@ h2 {
     font: normal normal bold 28px/40px Noto Sans TC;
   }
 }
+.top {
+  z-index: 10;
+  background-color: #56C4C5;
+  width: 71px;
+  height: 71px;
+  color: #fff;
+  border-radius: 50px;
+  position: fixed;
+  right: 48px;
+  bottom: 47px;
+}
+
 .main {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
   background-repeat: no-repeat;
@@ -92,16 +104,6 @@ h2 {
   z-index: -100;
   left: -180.5px;
   bottom: -180.5px;
-}
-.main .top {
-  background-color: #56C4C5;
-  width: 71px;
-  height: 71px;
-  color: #fff;
-  border-radius: 50px;
-  position: absolute;
-  right: 48px;
-  bottom: 23px;
 }
 
 nav {
@@ -319,6 +321,10 @@ nav .fee {
 @media (max-width: 375px) {
   .container {
     max-width: 335px;
+  }
+  .top {
+    width: 50px;
+    height: 50px;
   }
   .main {
     background-image: none !important;

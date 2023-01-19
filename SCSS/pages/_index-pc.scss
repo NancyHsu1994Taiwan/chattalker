@@ -4,7 +4,17 @@
 //     background-position: right top;
 //     background-size: contain;
 // }
-
+.top{
+    z-index: 10;
+    background-color: $primary-green;
+    width: 71px;
+    height: 71px;
+    color: #fff;
+    border-radius: 50px;
+    position: fixed;
+    right: 48px;
+    bottom: 47px;
+}
 .main{
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
     background-repeat: no-repeat;
@@ -18,16 +28,7 @@
         left: -180.5px;
         bottom: -180.5px;
     }
-    .top{
-        background-color: $primary-green;
-        width: 71px;
-        height: 71px;
-        color: #fff;
-        border-radius: 50px;
-        position: absolute;
-        right: 48px;
-        bottom: 23px;
-    }
+    
 }
 nav{
     padding: 24px 0;
