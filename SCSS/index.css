@@ -90,8 +90,8 @@ h2 {
 .main .bg-circle {
   position: absolute;
   z-index: -100;
-  left: -139px;
-  bottom: -139px;
+  left: -180.5px;
+  bottom: -180.5px;
 }
 .main .top {
   background-color: #56C4C5;
@@ -120,6 +120,7 @@ nav .fee {
 
 .banner {
   height: 100%;
+  position: relative;
 }
 .banner .main-content {
   padding-top: 188px;
@@ -134,8 +135,13 @@ nav .fee {
 .banner p {
   font: normal normal normal 20px/29px Noto Sans TC;
 }
-.banner .home {
+.banner .banner-img {
+  position: relative;
+}
+.banner .banner-img .home {
   max-width: 86%;
+  position: absolute;
+  right: 0px;
 }
 
 .social-media {
@@ -161,6 +167,7 @@ nav .fee {
 .row-playing {
   margin-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 .row-playing span {
   font: normal normal normal 20px/29px Noto Sans TC;
@@ -223,48 +230,63 @@ nav .fee {
 .comment {
   position: relative;
 }
-.comment h2 {
-  margin-bottom: 48px;
+.comment .container {
+  overflow-x: hidden;
 }
-.comment .box {
+.comment h2 {
+  margin-bottom: 152px;
+}
+.comment .swiper {
+  overflow: visible !important;
+}
+.comment .swiper .box {
   background-color: #fff;
   padding: 48px 32px 24px 32px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 12px;
-}
-.comment .box .customer-img {
-  width: 26%;
-  border-radius: 50px;
   position: relative;
-  top: -100px;
+  margin-bottom: 24px;
 }
-.comment .box .comment-txt {
+.comment .swiper .box .box-img {
+  position: absolute;
+  top: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: #000;
+  overflow: hidden;
+}
+.comment .swiper .box .box-img .customer-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 100;
+}
+.comment .swiper .box .comment-txt {
   font: normal normal normal 16px/24px Noto Sans TC;
   border-bottom: 1px solid #DDDDDD;
 }
-.comment .box .customer p {
+.comment .swiper .box .customer p {
   font: normal normal bold 16px/24px Noto Sans TC;
 }
-.comment .box .customer .content span {
+.comment .swiper .box .customer .content span {
   font: normal normal normal 16px/24px Noto Sans TC;
 }
-.comment .box .customer .content img {
-  margin-right: 8px;
+.comment .swiper .box .customer .content img {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
 }
-.comment .page-turn {
-  margin-bottom: 100px;
-}
-.comment .page-turn a {
-  width: 10px;
-  height: 10px;
-  border-radius: 50px;
-  background-color: #DDDDDD;
+.comment .swiper .swiper-pagination {
+  margin-top: 24px;
 }
 .comment .bg-circle-light {
   z-index: -100;
   position: absolute;
-  left: -20px;
-  top: -20px;
+  left: 20px;
+  top: 200px;
 }
 
 .bottom {

@@ -15,8 +15,8 @@
     .bg-circle{
         position: absolute;
         z-index: -100;
-        left: -139px;
-        bottom: -139px;
+        left: -180.5px;
+        bottom: -180.5px;
     }
     .top{
         background-color: $primary-green;
@@ -45,6 +45,7 @@ nav{
 
 .banner{
     height: 100%;
+    position: relative;
     .main-content{
         padding-top: 188px;
     }
@@ -58,9 +59,15 @@ nav{
     p{
         font: normal normal normal 20px/29px Noto Sans TC;
     }
-    .home{
-        max-width: 86%;
+    .banner-img{
+        position: relative;
+        .home{
+            max-width: 86%;
+            position: absolute;
+            right: 0px;
+        }
     }
+    
 }
 
 .social-media{
@@ -87,6 +94,7 @@ nav{
 .row-playing{
     margin-top: 100px;
     position: relative;
+    overflow: hidden;
     span{
         font: normal normal normal 20px/29px Noto Sans TC;
         margin-bottom: 48px;
@@ -152,56 +160,88 @@ nav{
 }
 
 .comment{
+    .container{
+        overflow-x: hidden;
+    }
     position: relative;
     h2{
-        margin-bottom: 48px;
+        margin-bottom: 152px;
     }
-    .box{
-        background-color: #fff;
-        padding: 48px 32px 24px 32px;
-        box-shadow: 0px 2px 10px #00000014;
-        border-radius: 12px;
-        // position: absolute;
-        .customer-img{
-            width: 26%;
-            border-radius: 50px;
+    // .swiper-container{
+    //     height: 110%;
+    //     overflow-x: hidden;
+    //     overflow-y: visible;
+    // }
+    .swiper{
+        overflow: visible !important;
+        .box{
+            background-color: #fff;
+            padding: 48px 32px 24px 32px;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
             position: relative;
-            top: -100px;
-        }
-        .comment-txt{
-            font: normal normal normal 16px/24px Noto Sans TC;
-            border-bottom: 1px solid #DDDDDD;
-        }
-        .customer{
-            p{
-                font: normal normal bold 16px/24px Noto Sans TC;
-            }
-            .content{
-                span{
-                    font: normal normal normal 16px/24px Noto Sans TC;
+            margin-bottom: 24px;
+            .box-img{
+                position: absolute;
+                top: -50px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                background-color: #000;
+                overflow: hidden;
+                .customer-img{
+                    // top: 0;
+                    // left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    z-index: 100;
+                    // top: -100px;
                 }
-                img{
-                    margin-right: 8px;
-                }
-
             }
+            
+            .comment-txt{
+                font: normal normal normal 16px/24px Noto Sans TC;
+                border-bottom: 1px solid #DDDDDD;
+            }
+            .customer{
+                p{
+                    font: normal normal bold 16px/24px Noto Sans TC;
+                }
+                .content{
+                    span{
+                        font: normal normal normal 16px/24px Noto Sans TC;
+                    }
+                    img{
+                        margin-left: 8px;
+                        width: 16px;
+                        height: 16px;
+                    }
+    
+                }
+            }
+        }
+        .swiper-pagination{
+            margin-top: 24px;
         }
     }
-    .page-turn {
-        margin-bottom: 100px;
-        a{
-            width: 10px;
-            height: 10px;
-            // padding: 10px;
-            border-radius: 50px;
-            background-color: $color-grey;
-        }
-    }
+    
+    // .page-turn {
+    //     margin-bottom: 100px;
+    //     a{
+    //         width: 10px;
+    //         height: 10px;
+    //         // padding: 10px;
+    //         border-radius: 50px;
+    //         background-color: $color-grey;
+    //     }
+    // }
     .bg-circle-light{
         z-index: -100;
         position: absolute;
-        left: -20px;
-        top: -20px;
+        left: 20px;
+        top: 200px;
     }
 
 }
