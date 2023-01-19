@@ -330,6 +330,7 @@ nav .fee {
     max-height: 24px;
   }
   .main .banner .main-content {
+    padding-top: 0 !important;
     margin-top: 32px !important;
   }
   .main .banner span {
@@ -396,9 +397,6 @@ nav .fee {
   }
   .service .service-intro span {
     text-align: center !important;
-  }
-  .comment .box .customer-img {
-    top: -50px;
   }
   .bottom {
     font: normal normal bold 24px/35px Noto Sans TC;
